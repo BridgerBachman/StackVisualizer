@@ -1,0 +1,86 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    background-color: #4681f4; /* Light blue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #5783db; /* A darker shade of blue */
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #87CEEB; /* Add a subtle glow */
+}
+
+.stack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    height: 480px; /* Adjust the height as needed */
+    margin: 20px;
+}
+
+.bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Thickness of the bottom line */
+    background-color: #333; /* Color of the bottom line */
+}
+
+.vertical-line {
+    position: absolute;
+    bottom: 0;
+    width: 5px; /* Thickness of the vertical lines */
+    background-color: #333; /* Color of the vertical lines */
+}
+
+.left-line {
+    left: 0; /* Correctly align left line */
+    height: 90%;
+}
+
+.right-line {
+    right: 0; /* Correctly align right line */
+    height: 90%;
+}
+
+.controls {
+    display: flex;          /* Use flexbox for layout */
+    margin-left: 220px;    /* Add margin to move controls to the right */
+    flex-direction: column; /* Arrange items vertically */
+}
+
+#stackItems {
+    position: absolute; /* Positioning for the items */
+    bottom: 30px;      /* Space from the bottom line */
+    left: 10px;        /* Align with the left line */
+    width: 180px;      /* Width of the items */
+}
+
+.stack-item  {
+    width: 100%;       /* Full width of the stack area */
+    height: 30px;      /* Height of each item */
+    background-color: #4681f4; /* Same color as buttons */
+    margin: 5px 0;     /* Space between items */
+    border-radius: 5px; /* Rounded corners */
+}
+.pushValue {
+    width: 150px;
+}

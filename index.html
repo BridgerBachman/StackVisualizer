@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Stack Visualizer</title>
+    <link rel="stylesheet" href="style.css"><!--Link to my style.css file-->
+</head>
+
+<body>
+    <h1>JavaScript Stack Visualizer</h1>
+    <div class="controls">
+        
+        <ul>
+            <li><button id="pushButton" type="button">push(value)</button><input id="pushValue" type="number" type="text" placeholder="value" size ="4"></li>
+            <li><button id="popButton" type="button">pop()</button><span id="popVal"></span></li>
+            <li><button id="peekButton" type="button">peek()</button> <span id="peekVal"></span></li>
+            <li><button id="isEmptyButton" type="button">isEmpty()</button><span id="isEmptyVal"></span></li>
+            <li><button id="sizeButton" type="button">size()</button><span id="sizeVal"><span></li>
+        </ul>
+
+        <div class="descriptions">
+            <ul>
+                <li><b>push(value):</b> Adds an element to the top of the stack.</li>
+                <li><b>pop():</b> Removes and returns the top element from the stack.</li>
+                <li><b>peek():</b> Returns the top element without removing it from the stack.</li>
+                <li><b>isEmpty():</b> Checks if the stack contains no elements.</li>
+                <li><b>size():</b> Returns the number of elements currently in the stack.</li>
+            </ul>
+        <div>
+
+    </div>
+
+
+        <div class="stack">
+            <div class="bottom-line"></div>
+            <div class="vertical-line left-line"></div>
+            <div class="vertical-line right-line"></div>
+            <div id="stackItems"></div> <!-- New container for stack items -->
+        <div>
+        <script src="script.js"></script>
+</body>
+</html>
